@@ -9,18 +9,40 @@
     <title>Videos do Youtube</title>
 </head>
 <style>
+    /* Alinha verticalmente ao centro */
     body {
         background-color: black;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+    }
+
+    /* Alinha o título ao centro */
+    h1 {
+        text-align: center;
         color: aliceblue;
     }
+
+    /* Adiciona um espaçamento entre o título e o vídeo */
+    h1 + iframe {
+        margin-top: 20px;
+    }
+
+    /* Adiciona um espaçamento entre o vídeo e os links */
+    iframe + a {
+        margin-top: 20px;
+    }
 </style>
+
 <body>
-    <h1>Morning Zen in the Green Forest</h1>
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/BPxIZhH-AqM" title="YouTube video player"
+    <h1>1 HOUR Cyberpunk Music</h1>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/wMQqorgz4wU" title="YouTube video player"
         frameborder="0"
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
         allowfullscreen></iframe>
-    <a href="https://www.youtube.com/embed/BPxIZhH-AqM" target="_blank">
+    <a href="https://www.youtube.com/embed/wMQqorgz4wU" target="_blank">
         <p>Veja o video no YouTube</p>
     </a>
     <a href="/index.html"><img src="/imagens/voltar.png" alt="Voltar"></a>

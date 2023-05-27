@@ -9,9 +9,30 @@
     <title>Videos do Youtube</title>
 </head>
 <style>
+    /* Alinha verticalmente ao centro */
     body {
         background-color: black;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+    }
+
+    /* Alinha o título ao centro */
+    h1 {
+        text-align: center;
         color: aliceblue;
+    }
+
+    /* Adiciona um espaçamento entre o título e o vídeo */
+    h1 + iframe {
+        margin-top: 20px;
+    }
+
+    /* Adiciona um espaçamento entre o vídeo e os links */
+    iframe + a {
+        margin-top: 20px;
     }
 </style>
 <body>
